@@ -1,0 +1,25 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* NavBar */
+.navbar {
+    box-shadow: 0 5px 9px 3px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+.nav-item {
+    border-bottom: 7    .5px solid rgba(0, 0, 0, 0.05);
+}

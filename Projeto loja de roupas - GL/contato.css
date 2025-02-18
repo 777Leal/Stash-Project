@@ -1,0 +1,185 @@
+/* ===== Definição de Variáveis Globais ===== */
+:root {
+    --bg-color: #f8f9fa; /* Fundo mais claro */
+    --text-color: #333333; /* Texto escuro para melhor legibilidade */
+    --primary-color: #7b7b7b; /* Vermelho mais suave e consistente */
+    --secondary-color: #222222; /* Cor para o texto secundário */
+    --button-color: #7b7b7b; /* Cor de fundo dos botões */
+    --button-hover-color: #333333; /* Cor de fundo ao passar o mouse */
+    --border-color: #ddd; /* Borda mais suave */
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.navbar-brand img {
+    width: 40px; /* Ajuste da imagem logo */
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Nav links */
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Navbar Items */
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    background-color: var(--bg-color);
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.contact span {
+    color: var(--primary-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact form .input-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact form .input-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: 0.8rem 0;
+    transition: border-color 0.3s ease;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact form .bnt {
+    padding: 1rem 2rem;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form .bnt:hover {
+    background-color: var(--button-hover-color);
+    color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+    color: white;
+}
+
+footer .brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer .list-unstyled a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .list-unstyled a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer .d-flex .fs-4 {
+    font-size: 1.5rem;
+}
+
+footer .social-icons li {
+    margin-right: 1rem;
+}
+
+footer .social-icons a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .contact form {
+        width: 95%;
+    }
+
+    .contact form .input-group {
+        flex-direction: column;
+    }
+}
